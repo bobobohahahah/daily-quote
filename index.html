@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Inspiration - Quote of the Day</title>
+
+    <link rel="icon" href="favicon.png" type="image/png"> 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -185,7 +187,8 @@
                     }
                 };
 
-                const apiKey = ""; // Canvas will automatically provide this at runtime
+                // IMPORTANT: Replace "YOUR_GEMINI_API_KEY_HERE" with your actual Gemini API key
+                const apiKey = AIzaSyAalvoavo6Hx_mMgEUgDcaGkdLOTWNva38; 
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
                 const response = await fetch(apiUrl, {
